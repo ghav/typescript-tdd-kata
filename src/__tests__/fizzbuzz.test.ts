@@ -1,12 +1,16 @@
-// import hello from "../hello";
-
-describe('FizzBuzz tdd test', () => {
-
-    beforeEach( () => {
-	})
-
-    it('write my first test', () => {
-        expect(1).toEqual(1)
+import fizzBuzz from "../fizzBuzz";
+describe('Fizzbuss TDD', () => {
+    it('should return ["1","2"] with 2 as input.', () => {
+        expect(fizzBuzz(2)).toEqual(["1","2"])
+    });
+    it('should return ["1","2","Fizz"] with 3 as input.', () => {
+        expect(fizzBuzz(3)).toEqual(["1","2", "Fizz"])
+    });
+    it('should return ["1","2","Fizz","4","Buzz"] with 5 as input.', () => {
+        expect(fizzBuzz(5)).toEqual(["1","2","Fizz","4","Buzz"])
+    });
+    it('should return ["1","2","Fizz","4","Buzz","Fizz","7", "8", "Fizz", "Buzz",, "11", "Fizz", "13", "14", "FizzBuzz"] with 15 as input.', () => {
+        expect(fizzBuzz(15)).toEqual(["1","2","Fizz","4","Buzz","Fizz","7", "8", "Fizz", "Buzz",, "11", "Fizz", "13", "14", "FizzBuzz"])
     });
 });
 
